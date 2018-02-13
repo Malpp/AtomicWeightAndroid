@@ -2,6 +2,7 @@ package com.v41.tp1.vuecontroleur;
 
 import com.v41.tp1.modele.ChemicalFormula;
 import com.v41.tp1.modele.PeriodicTable;
+import com.v41.tp1.vuecontroleur.portal.IPortalView;
 
 public enum Controller
 {
@@ -10,7 +11,7 @@ public enum Controller
 	/**
 	 * THe view
 	 */
-	private View view;
+	private IPortalView view;
 	/**
 	 * The current formula that was last parsed
 	 */
@@ -29,10 +30,10 @@ public enum Controller
 	 * @param view The view
 	 * @param fileName Filename for the periodic table database
 	 */
-	public void init(View view, String fileName)
+	public void init(IPortalView view, String fileName)
 	{
 		this.view = view;
-		PeriodicTable.INSTANCE.loadTableFromString(fileName);
+		PeriodicTable.INSTANCE.loadTableFromString();
 		formula = new ChemicalFormula(view);
 	}
 	

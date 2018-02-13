@@ -249,7 +249,7 @@ public enum ChemicalValidator
 			}
 		}
 		
-		userReply.content = "Valid\n";
+		userReply.content = "";
 		return true;
 	}
 	
