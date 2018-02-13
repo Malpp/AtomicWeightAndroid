@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TP1</string>
+    <string name="formula_hint">Enter chemical formula</string>
+</resources>
