@@ -145,6 +145,6 @@ public class ChemicalFormula implements IPortalModel
 		for(Map.Entry<String, Double> entry : compositon.entrySet()){ //https://stackoverflow.com/questions/5757202/how-would-i-print-all-values-in-a-treemap
 			mapResult += entry.getKey() + ": " + entry.getValue() + "\n";
 		}
-		return weight + "\n\n" + mapResult;
+		return weight + "\n" + mapResult;
 	}
 }

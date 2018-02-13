@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.widget.EditText;
+import android.widget.TableLayout;
 import android.widget.TextView;
 
 import com.v41.tp1.modele.portal.IPortalModel;
@@ -64,6 +65,8 @@ public class CalculatorActivity extends AppCompatActivity implements IPortalView
 		//formulaEditText.clearFocus();
 		String result = model.getFormulaInformation();
 		resultsView.setText(result);
-		System.out.println(result);
+		String[] resultsTable = result.split("\\r?\\n");
+		//TableLayout layout = (TableLayout)findViewById(R.id.elementsTable);
+		//layout.
 	}
 }
